@@ -13,11 +13,14 @@ body {
   color: var(--main-white);
   margin: 0;
   overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 100vh auto auto auto;
 }
 
 .nav {
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .nav-list {
@@ -64,4 +67,39 @@ nav ul li a {
   color: var(--main-red);
 }
 
+.projects-section {
+  background-color: var(--main-blue);
+  width: 100%;
+}
 
+.projects-grid {
+  display: grid;
+  background-color: blue;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  height: auto;
+  gap: 20px;
+}
+
+.project-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  background-color: var(--main-gray);
+  color: var(--main-white);
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-section {
+  height: auto;
+  background-color: greenyellow;
+ 
+}
+
+footer {
+  background-color: green;
+}
