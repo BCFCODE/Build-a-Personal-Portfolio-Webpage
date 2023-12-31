@@ -69,35 +69,53 @@ nav ul li a {
 
 .projects-section {
   background-color: var(--main-blue);
-  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.projects-section-header {
+  /* display: inline-block; */
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border-bottom: 2px solid var(--main-white);
+  padding-bottom: 5px;
+  font-size: 35px;
+  margin-top: 65px;
 }
 
 .projects-grid {
   display: grid;
-  background-color: blue;
-  grid-template-columns: 300px 300px 300px;
+  /* background-color: blue; */
+  grid-template-columns: 330px 330px 330px;
   justify-content: center;
   height: auto;
   gap: 20px;
 }
 
+.projects-grid a {
+  border: 2px solid white;
+  background-color: var(--main-gray);
+  display: grid;
+  grid-template-rows: 80% 1fr;
+}
+
 .project-image {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-fit: cover;
 }
 
 .project-title {
-  background-color: var(--main-gray);
   color: var(--main-white);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 .contact-section {
   height: auto;
   background-color: greenyellow;
- 
 }
 
 footer {
