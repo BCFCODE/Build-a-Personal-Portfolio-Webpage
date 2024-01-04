@@ -74,41 +74,45 @@ nav ul li a {
   font-size: 50px;
 }
 
+
+.codewars {
+  opacity: 0.1;
+  margin-top: 30px; /* Initial position */
+  transition: margin-top 2s, opacity 2s;
+}
+
+.welcome-section:hover .codewars { 
+  margin-top: 0; /* Move up on hover */
+  opacity: 1;  
+  z-index: 1;
+}
+
+.codewars:hover {
+  opacity: 1;
+}
+
+
 .aWebDeveloper {
   position: absolute;
   font-size: 25px;
   font-weight: 700;
-  font-style: italic; 
+  font-style: italic;
   color: var(--main-red);
   top: 70px;
   left: 100px;
+  transition: opacity 2s;
 }
 
-.codewars {
-  opacity: 0.1;
-  transform: translate(0, 30px);
-  transition: opacity 2s, transform 2s; 
-}
-
-.codewars:hover {
-  cursor: pointer;
-  opacity: 1;
-  z-index: 1;
-} 
-
-.heyIamMortezaLink:hover .codewars {
-  transform: translate(0, 0);
-  opacity: 1;
+.welcome-section:hover .aWebDeveloper { 
+  opacity: 0;  
   z-index: 1;
 }
-
-
 
 .projects-section {
   background-color: var(--main-blue);
   display: grid;
   justify-content: center;
-}
+} 
 
 .projects-section-header {
   /* display: inline-block; */
