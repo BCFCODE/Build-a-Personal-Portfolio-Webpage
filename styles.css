@@ -74,17 +74,17 @@ nav ul li a {
   font-size: 50px;
 }
 
-
 .codewars {
+  z-index: 1;
   opacity: 0.1;
   margin-top: 30px; /* Initial position */
   transition: margin-top 2s, opacity 2s;
 }
 
-.welcome-section:hover .codewars { 
-  margin-top: 0; /* Move up on hover */
-  opacity: 1;  
-  z-index: 1;
+.headerContainer:hover .codewars { 
+  margin-top: 10px; /* Move up on hover */
+  opacity: 0.9;  
+  z-index: 2;
 }
 
 .codewars:hover {
@@ -103,10 +103,10 @@ nav ul li a {
   transition: opacity 2s;
 }
 
-.welcome-section:hover .aWebDeveloper { 
+.headerContainer:hover .aWebDeveloper { 
   opacity: 0;  
-  z-index: 1;
 }
+
 
 .projects-section {
   background-color: var(--main-blue);
