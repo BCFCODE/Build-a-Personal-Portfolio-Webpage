@@ -78,19 +78,18 @@ nav ul li a {
   z-index: 1;
   opacity: 0.1;
   margin-top: 30px; /* Initial position */
-  transition: margin-top 2s, opacity 2s;
+  transition: margin-top 1s, opacity 1s;
 }
 
-.headerContainer:hover .codewars { 
+.headerContainer:hover .codewars {
   margin-top: 10px; /* Move up on hover */
-  opacity: 0.8;  
+  opacity: 0.8;
   z-index: 2;
 }
 
 .codewars:hover {
   opacity: 1;
 }
-
 
 .aWebDeveloper {
   position: absolute;
@@ -103,16 +102,15 @@ nav ul li a {
   transition: opacity 2s;
 }
 
-.headerContainer:hover .aWebDeveloper { 
-  opacity: 0;  
+.headerContainer:hover .aWebDeveloper {
+  opacity: 0;
 }
-
 
 .projects-section {
   background-color: var(--main-blue);
   display: grid;
   justify-content: center;
-} 
+}
 
 .projects-section-header {
   /* display: inline-block; */
@@ -134,7 +132,7 @@ nav ul li a {
 }
 
 .projects-grid a {
-  border: 2px solid white;
+  border: 1px solid var(--main-gray);
   background-color: var(--main-gray);
   display: grid;
   grid-template-rows: 85% 1fr;
@@ -176,27 +174,30 @@ nav ul li a {
 
 .contact-section-header h2 {
   padding-top: 80px;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .contact-section-header p {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 
 .contact-links {
   margin-top: 20px;
   margin-bottom: 130px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
 }
 
 .contact-links a {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--main-white);
-  margin: auto 20px;
+  padding: 0 25px;
+  font-weight: 100;
 }
 
 footer {
@@ -230,7 +231,7 @@ footer a {
   vertical-align: middle;
   transform: translate(5px);
   transition: transform 200ms ease-in-out;
-} 
+}
 
 .btn-show-all:hover {
   background-color: var(--main-red);
@@ -240,3 +241,12 @@ footer a {
   transform: translate(7px);
 }
 
+.contact-details {
+  transform: translate(0, 0);
+  transition: transform 300ms;
+}
+
+.contact-details:hover {
+  transform: translate(0, 5px);
+  text-shadow: 0 0 10px var(--main-white);
+}
