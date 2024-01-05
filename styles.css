@@ -83,7 +83,7 @@ nav ul li a {
 
 .headerContainer:hover .codewars { 
   margin-top: 10px; /* Move up on hover */
-  opacity: 0.9;  
+  opacity: 0.8;  
   z-index: 2;
 }
 
@@ -213,3 +213,30 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
+
+.btn-show-all {
+  text-decoration: none;
+  color: var(--main-white);
+  background-color: var(--main-gray);
+  margin: 50px auto 80px;
+  padding: 7px 20px 7px 17px;
+  font-size: 15px;
+  border-radius: 2px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.fa-chevron-right {
+  font-size: 15px;
+  vertical-align: middle;
+  transform: translate(5px);
+  transition: transform 200ms ease-in-out;
+} 
+
+.btn-show-all:hover {
+  background-color: var(--main-red);
+}
+
+.btn-show-all:hover .fa-chevron-right {
+  transform: translate(7px);
+}
+
