@@ -8,6 +8,10 @@
   --text-shadow: 0 0 10px var(--main-white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
