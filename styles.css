@@ -93,13 +93,14 @@ body {
 
 .heyIamMorteza {
   font-size: 50px;
+  transition: font-size 2s, margin 2s;
 }
 
 .codewars {
   z-index: 1;
   opacity: 0.1;
   margin-top: 30px; /* Initial position */
-  transition: margin-top 1s, opacity 1s;
+  transition: margin-top 2s, opacity 1s, height 2s;
 }
 
 .headerContainer:hover .codewars {
@@ -120,7 +121,7 @@ body {
   color: var(--main-red);
   top: 70px;
   left: 100px;
-  transition: opacity 2s;
+  transition: opacity 2s, font-size 2s, top 2s, left 2s;
 }
 
 .headerContainer:hover .aWebDeveloper {
@@ -141,7 +142,7 @@ body {
   padding-bottom: 5px;
   font-size: 35px;
   margin-top: 65px;
-  transition: font-size 1s ease;
+  transition: font-size 2s ease;
 }
 
 .projects-grid {
@@ -369,6 +370,25 @@ footer a {
 }
 
 @media (max-width: 550px) {
+  .heyIamMorteza {
+    font-size: 34px;
+  }
+  .headerContainer:hover .heyIamMorteza {
+    margin-top: 40px;
+  }
+  .aWebDeveloper {
+    font-size: 20px;
+    top: 45px;
+  }
+  .codewars {
+    height: 30px;
+    margin: 0;
+    transform: translate(0, -10px); 
+    transition: transform 2s, opacity 1s, margin 2s;
+  }
+  .headerContainer:hover .codewars {
+    transform: translate(0, -25px); /* Move up on hover */
+  }
   .workTogether {
     font-size: 35px;
   }
@@ -396,3 +416,4 @@ footer a {
     font-size: 10px;
   }
 }
+
