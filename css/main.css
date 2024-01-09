@@ -128,6 +128,10 @@ body {
   opacity: 0;
 }
 
+/* .project {
+  display: flex;
+} */
+
 .projects-section {
   background-color: var(--main-blue);
   display: grid;
@@ -155,12 +159,12 @@ body {
   gap: 20px;
 }
 
-.projects-grid a {
+.project {
   border: 1px solid var(--main-gray);
   background-color: var(--main-gray);
-  display: grid;
-  grid-template-rows: 85% 1fr;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .code {
@@ -180,8 +184,10 @@ body {
 
 .project-title {
   color: var(--main-white);
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
+  padding: 10px 0;
+  transition: font-size 1s;
 }
 
 .btn-show-all {
