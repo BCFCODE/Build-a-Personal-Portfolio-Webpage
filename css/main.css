@@ -148,7 +148,8 @@ body {
 .projects-grid {
   display: grid;
   /* background-color: blue; */
-  grid-template-columns: 330px 330px 330px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 20px;
   justify-content: center;
   height: auto;
   gap: 20px;

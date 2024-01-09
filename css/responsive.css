@@ -47,7 +47,8 @@
     margin-top: -45px;
   }
   .projects-grid {
-    grid-template-columns: 330px 330px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px;
   }
   .contact-links-row-1 a,
   .contact-links-row-2 a {
@@ -62,19 +63,20 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   .workTogether {
     font-size: 50px;
     margin-top: 175px;
   }
-  
+
   .takeYourCoffee {
     font-size: 23px;
     margin-top: -50px;
   }
 
   .projects-grid {
-    grid-template-columns: 330px;
+    grid-template-columns: 1fr;
+    margin: 0 20px;
   }
 
   .projects-section-header {

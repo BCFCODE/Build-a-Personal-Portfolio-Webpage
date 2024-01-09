@@ -1,2 +1,0 @@
-import { year } from "./main";
-
